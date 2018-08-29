@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+    <!-- viewport的定义？？？？？？？？？ -->
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <!--删除默认的苹果工具栏和菜单栏-->
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="keywords" content="陆金所，融360，百度钱包，中国农业银行，基金理财，小米金融，极速借钱，交通银行信用卡，京东白条，网贷之家，挖财，平安一账通，积木盒子,工资理财，蚂蚁花呗，赚钱神器，爱前进，财经头条，拍拍贷app,云支付，钱多多，大学生贷款平台，腾讯金融，消费金融" />
+    <meta name="description" content="钱夹由北京昂道网络科技有限公司开发推出集人人聚财、家庭理财、活期理财、理财赚钱、消费赚钱等多功能为一体的赚钱软件综合性APP应用，同时作为一个全新的互联网金融信息中介平台，钱夹与线下多个城市核心商圈商户合作联合线上O2O哔咯消费返现平台，打破传统银行理财、现金贷及其他投资理财冻结投资期内投资本金限制，首创本金可消费，让钱夹平台用户在投资期内本金可通过线上O2O哔咯平台随意支配花费，即使用户将投资本钱全部花完，项目到期时依然能够获得初始投资本金应有的全部利息收益，用户花的越多赚的越多，投资更安全，收益更可观。" />
+
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <title>钱夹</title>
+
+  <script>
+        //动态计算根元素的font-size
+        (function(){
+          function setFontSize(){
+              var clientWidth = document.documentElement.clientWidth;
+              if (clientWidth>750){ //页面最大750px
+                  document.documentElement.style.fontSize = 100*750/750+'px';
+              }else if(clientWidth<320){ //页面最小320px
+                  document.documentElement.style.fontSize = 100*320/750+'px';
+              }else{
+                  document.documentElement.style.fontSize = 100*document.documentElement.clientWidth/750+'px';
+              }
+          }
+          setFontSize();
+          window.onload = window.onresize = function(){
+              setFontSize();
+          }
+        })();
+
+    </script>
+</head>
+<body>
+    <div id="app">{{content}}}</div>
+</body>
+</html>
